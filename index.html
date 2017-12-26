@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York Times</title>
+
+	<!--Bootstrap CDN link-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<!--Bootswatch-->
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+
+	<!--Font Awesoome-->
+	<script src="https://use.fontawesome.com/abd289e58f.js"></script>
+
+	<!--JQuery link-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron jumbotron-fluid bg-primary">
+		  <div class="container">
+		    <h1 class="display-3 text-center"> <i class="fa fa-newspaper-o" aria-hidden="true"></i>New York Times Search</h1>
+		  </div>
+		</div>
+
+		<div class="card">
+		  <div class="card-header bg-primary">
+		    <i class="fa fa-newspaper-o" aria-hidden="true"></i> Search Parameters
+		  </div>
+		  <div class="card-body">
+		    <form>
+			
+				<div class="form-group">
+				    <label for="exampleFormControlInput1" id="search-term">Search term</label>
+				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Kennedy">
+				</div>
+
+				<div class="form-group">
+				    <label for="exampleFormControlSelect1" id="number-records">Number of records to retrieve</label>
+				    <select class="form-control" id="exampleFormControlSelect1">
+				      <option>1</option>
+				      <option>5</option>
+				      <option>10</option>
+				      <option>15</option>
+				      <option>20</option>
+				     </select>
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlInput1" id="start-year">Start year (optional)</label>
+					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="YYYYMMDD">
+				</div>
+
+
+			  	<div class="form-group">
+					  <label for="exampleFormControlInput1" id="end-year">End year (optional)</label>
+					  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="YYYYMMDD">
+				</div>
+
+				<button type="button" id="search" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+				<button type="button" id="clear" class="btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i> Clear Results</button>
+			</form>
+
+		  </div>
+		</div>
+
+		<div class="card mt-4">
+			<div class="card-header bg-primary">
+				Top Articles
+			</div>
+			<div class="card-body" id="main">
+			</div>
+		</div>
+	</div>
+
+<!--Javascript link-->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

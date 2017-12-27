@@ -61,7 +61,7 @@ function runQuery(numArticles, queryURl) {
 
 				//attach the content to the appropriate div in the HTML.
 				$("#articleDiv-" + i).append("<h5>" + NYTData.response.docs[i].pub_date + "</h5>");
-				$("#articleDiv-" + i).append("<a href=" + NYTData.response.docs[i].web_url + ">" + NYTData.response.docs[i].web_url + "</a>");
+				$("#articleDiv-" + i).append("<a target=_blank href=" + NYTData.response.docs[i].web_url + ">" + NYTData.response.docs[i].web_url + "</a>");
 			}
 
 			//Debugging to console...

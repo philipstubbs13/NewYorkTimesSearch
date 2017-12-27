@@ -36,7 +36,7 @@ $.ajax({
 	var docs = result.response.docs;
 	var newDiv = $('<div>');
 	// For Loop to Populate HTML with result array
-	for (i=0;i<records;i++) {
+	for (i=0; i < records; i++) {
 		//creating h2 elements to store each articles headline
 		var h = $('<h2>');
 		h.text(i + " " +docs[i].headline.main);

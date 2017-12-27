@@ -75,6 +75,7 @@ function runQuery(numArticles, queryURl) {
 //Main Processes
 //========================================================
 
+//When Search button is clicked...
 $("#search").on("click", function() {
 
 	//Get search term.
@@ -108,6 +109,12 @@ $("#search").on("click", function() {
 	runQuery(numResults, newURL);
 
 	return false;
+})
+
+//When Clear Results button is clicked...
+$("#clear").on("click", function() {
+	//Clear the main div (Top Articles section) from the previous run/search.
+	$("#main").empty();
 })
 
 
